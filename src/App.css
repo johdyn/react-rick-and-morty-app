@@ -1,8 +1,15 @@
 .App {
   height: 100vh;
   display: grid;
+  grid-template-rows: [header] 80px [content] 540px;
+  grid-template-columns: auto;
   place-items: center;
   color: #04b1c5;
   background-color: #111440;
   font-size: 2em;
+}
+
+.header-class {
+  display: flex;
+  justify-content: space-around;
 }
