@@ -18,10 +18,18 @@ export default function SingleCharacter() {
 
   return (
     <div>
-      {id}
-      <h2>{user.first_name}</h2>
-      <img src={user.avatar} alt={user.first_name} />
-      <button onClick={() => history.goBack()}> Back </button>
+      <section className="Single-character-section">
+        {id}
+        <h2>{user.name}</h2>
+        <img src={user.image} alt={user.name} />
+        <ul className="character-list">
+          <li>Status: {user.status}</li>
+          <li>Gender: {user.gender}</li>
+          <li>Species: {user.species}</li>
+          <li>Type: {user.type}</li>
+        </ul>
+        <button onClick={() => history.goBack()}> Back </button>
+      </section>
     </div>
   );
 }
