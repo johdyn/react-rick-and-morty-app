@@ -1,15 +1,50 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100vh;
+}
+
 .App {
   height: 100vh;
   display: grid;
   grid-template-rows: [header] 80px [content] 540px;
   grid-template-columns: auto;
-  place-items: center;
+  /* place-items: center; */
   color: #04b1c5;
   background-color: #111440;
   font-size: 2em;
 }
 
-.header-class {
+.h1-home {
+  font-size: 24px;
+  place-self: center;
+  margin: 20px;
+}
+
+.home-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+}
+.static-image-div {
+  display: flex;
+  justify-content: center;
+}
+
+.home-image {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.h2-home {
+  font-size: 20px;
+  place-self: center;
+  margin: 20px;
+  padding-top: 20px;
 }

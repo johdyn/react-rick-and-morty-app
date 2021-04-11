@@ -1,23 +1,26 @@
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
-} from "react-router-dom";
-import Navigation from "./components/Navigation";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Characters from "./components/Characters";
+import SingleCharacter from "./components/SingleCharacter";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <header className="header-class">
-          <Navigation />
-        </header>
+        <Header />
         <main>
           <Switch>
-            <Route path="/characters"></Route>
-            <Route path="/"></Route>
+            <Route path="/characters/:id">
+              <SingleCharacter />
+            </Route>
+            <Route path="/characters">
+              <Characters />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
           </Switch>
         </main>
       </div>

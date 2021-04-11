@@ -1,12 +1,10 @@
-import { NavLink } from "react-router-dom";
-
-export default function Navigation() {
+function Navigation() {
   return (
-    <nav>
+    <nav className="header-nav">
       <NavLink exact to="/">
         Home
       </NavLink>
-      <NavLink to="/characters">About</NavLink>
+      <NavLink to="/characters">Characters</NavLink>
     </nav>
   );
 }
