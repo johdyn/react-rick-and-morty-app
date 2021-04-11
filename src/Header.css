@@ -1,0 +1,29 @@
+.header-class {
+  display: flex;
+  flex-direction: row;
+  background-color: #04b1c5;
+  justify-content: space-between;
+}
+
+.header-logo {
+  justify-content: left;
+  place-self: center;
+}
+
+.logo-class {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  place-self: center;
+  background-color: #04b1c5;
+}
+
+.Nav-Link {
+  font-size: 16px;
+  margin: 10px;
+}
