@@ -1,10 +1,38 @@
 .character-section {
-  background-color: red;
+  background-color: #111440;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 10px;
+  max-width: 150px;
+  background-color: #f5f5dc;
 }
 
 .character-unit {
-  background-color: green;
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  height: 150px;
+}
+
+.character__link-name {
+  font-size: 16px;
+}
+
+.character__image {
+  border: solid black;
+  height: 70%;
+}
+
+.character-list {
+  font-size: 18px;
+}
+
+.Single-character-section {
+}
+
+.CharacterList-render {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }

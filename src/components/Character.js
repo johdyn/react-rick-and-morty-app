@@ -4,9 +4,10 @@ export default function Character({ name, picture, status, id }) {
   return (
     <div className="character-section">
       <section className="character-unit">
-        <Link to={`/characters/${id}`}>{name}</Link>
-        <p>{status}</p>
-        <img src={picture} />
+        <img src={picture} className="character__image" />
+        <Link to={`/characters/${id}`} className="character__link-name">
+          {name}
+        </Link>
       </section>
     </div>
   );

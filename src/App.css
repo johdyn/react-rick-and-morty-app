@@ -22,6 +22,13 @@ html {
   font-size: 2em;
 }
 
+.main-content {
+  grid-row: [content];
+  display: flex;
+  flex-flow: column;
+  overflow-y: scroll;
+}
+
 .h1-home {
   font-size: 24px;
   place-self: center;

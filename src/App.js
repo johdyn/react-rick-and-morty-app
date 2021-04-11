@@ -10,7 +10,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <main>
+        <main class="main-content">
           <Switch>
             <Route path="/characters/:id">
               <SingleCharacter />
